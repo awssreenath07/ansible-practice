@@ -1,0 +1,7 @@
+-
+    name: 'http service information'
+    hosts: TOMCAT
+    tasks: 
+      -
+        name: 'http service info'
+        command: 'service httpd status'

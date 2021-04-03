@@ -1,0 +1,10 @@
+-
+    name: 'Execute two commands on remote hosts'
+    hosts: DB
+    tasks: 
+        -
+            name: 'Execute date command'
+            command: date
+        -
+            name: 'Display hosts file'
+            command: 'cat /etc/hosts' 

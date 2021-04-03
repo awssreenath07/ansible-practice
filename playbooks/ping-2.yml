@@ -1,0 +1,11 @@
+-
+    name: 'Execute below two commands'
+    hosts: DB
+    tasks: 
+        -
+            name: 'Execute below date command'
+            command: date
+        -
+            name: 'Display hosts information on TOMCAT'
+            command: 'cat /etc/hosts'
+
