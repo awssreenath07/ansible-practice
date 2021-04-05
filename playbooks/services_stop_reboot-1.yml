@@ -1,0 +1,35 @@
+-
+    name: 'check the webservice status'
+    hosts: TOMCAT
+    tasks:
+      -
+        name: 'check webservice status'
+        command: 'systemctl status httpd'
+-
+    name: 'Stop the webservice'
+    hosts: TOMCAT
+    tasks:
+      -
+        name: 'stop the webservice'
+        command: 'systemctl stop httpd'
+#-
+#    name: 'reboot node'
+#    hosts: TOMCAT
+#    tasks:
+#      -
+#        name: 'reboot httpd node'
+#        command: 'reboot'
+-
+    name: 'start the webservice'
+    hosts: TOMCAT
+    tasks:
+      -
+        name: 'start webservice'
+        command: 'systemctl start httpd'
+-
+    name: 'check the webservice status'
+    hosts: TOMCAT
+    tasks:
+      -
+        name: 'check webservice status'
+        command: 'systemctl status httpd'

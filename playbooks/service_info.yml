@@ -1,7 +1,7 @@
 -
     name: 'http service information'
-    hosts: TOMCAT
+    hosts: localhost
     tasks: 
       -
         name: 'http service info'
-        command: 'service httpd status'
+        command: 'systemctl status httpd'

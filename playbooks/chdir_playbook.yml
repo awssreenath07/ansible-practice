@@ -1,0 +1,7 @@
+-
+    name: 'cat file'
+    hosts: TOMCAT
+    tasks:
+    -
+      name: 'cat below file'
+      command: 'cat Releases.txt chdir=/TOMCAT/'

@@ -1,0 +1,42 @@
+-
+    name: 'Stop the webservice'
+    hosts: TOMCAT
+    tasks: 
+      -
+        name: 'stop the webservice'
+        command: 'service tomcat stop'
+-
+    name: 'stop DB'
+    hosts: DB
+    tasks: 
+      -
+        name: 'stop mysql service'
+        command: 'service mysql stop'
+-
+    name: 'reboot node'
+    hosts: TOMCAT
+    tasks: 
+      -
+        name: 'reboot tomcat node'
+        command: 'reboot -r'
+-
+    name: 'start DB'
+    hosts: DB
+    tasks:
+      -
+        name: 'start DB'
+        command: 'service mysql start'
+-
+    name: 'start the webservice'
+    hosts: TOMCAT
+    tasks: 
+      -
+        name: 'start webservice'
+        command: 'service tomcat start'
+-
+    name: 'check the webservice status'
+    hosts: TOMCAT
+    tasks: 
+      -
+        name: 'check webservice status'
+        command: 'service tomcat status'
