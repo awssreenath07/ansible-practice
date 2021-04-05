@@ -4,4 +4,4 @@
     tasks:
     -
       name: 'cat below file'
-      command: mkdir sri-1 chdir=/TOMCAT/
+      command: mkdir sri-2 chdir=/TOMCAT/

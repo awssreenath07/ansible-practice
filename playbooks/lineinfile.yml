@@ -1,0 +1,9 @@
+-
+  name: 'place a line in file'
+  hosts: TOMCAT
+  tasks: 
+    -
+      lineinfile:
+        path: /TOMCAT/sri-1/Releases.txt
+        line: 'nameserver 142.12.2.1'
+

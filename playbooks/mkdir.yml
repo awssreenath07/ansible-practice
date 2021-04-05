@@ -1,0 +1,6 @@
+-
+    name: 'cat file'
+    hosts: TOMCAT
+    tasks:
+    -
+      command: mkdir sri-4 chdir=/TOMCAT/

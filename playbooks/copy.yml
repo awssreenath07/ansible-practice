@@ -1,0 +1,9 @@
+-
+    name: 'cat file'
+    hosts: TOMCAT
+    tasks:
+    -
+      name: 'copy release file'
+      copy: 
+        src: /TOMCAT/Releases.txt 
+        dest: /TOMCAT/sri-1/
