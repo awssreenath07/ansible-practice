@@ -1,0 +1,12 @@
+-
+    name: 'stop httpd service'
+    hosts: TOMCAT
+    tasks:
+      -
+        service: name=httpd state=stopped
+-
+    name: 'start nginx service'
+    hosts: TOMCAT
+    tasks:
+      -
+        service: name=nginx state=started

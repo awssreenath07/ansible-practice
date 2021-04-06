@@ -5,5 +5,5 @@
     -
       lineinfile:
         path: /TOMCAT/sri-1/Releases.txt
-        line: 'nameserver 142.12.2.1'
+        line: 'nameserver 16.16.16.16'
 

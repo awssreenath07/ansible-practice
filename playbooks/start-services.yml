@@ -1,0 +1,6 @@
+-
+    name: 'start httpd service'
+    hosts: TOMCAT
+    tasks:
+      -
+        service: name=httpd state=started
