@@ -1,0 +1,12 @@
+-
+    name: 'update IP in remote node'
+    hosts: TOMCAT
+    
+    vars:
+        DNS_SERVER: 10.1.1.10
+
+    tasks:
+        -
+            lineinfile:
+                path: /TOMCAT/sri-1/Releases.txt
+                line: 'nameserver {{DNS_SERVER}}'

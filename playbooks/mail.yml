@@ -1,0 +1,13 @@
+-
+    name: 'send a mail for below case'
+    hosts: TOMCAT
+    tasks:
+      -
+        command: 'systemctl status httpd'
+        register: result
+      -
+        mail:
+          to: psreenatha.reddy@outloo.com
+          subject: Httpd status down
+          Body: Httpd service is down and need to check
+          when: result.stdout.find('down') !=1

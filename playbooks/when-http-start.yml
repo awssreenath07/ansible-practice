@@ -1,0 +1,9 @@
+-
+    name: 'Start HTTPD when node is TOMCAT'
+    hosts: TOMCAT
+    tasks:
+      -
+        service:
+          name: httpd
+          state: started
+        when: 'ansible_host=="ip-172-31-18-137.ec2.internal"'

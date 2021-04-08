@@ -1,0 +1,16 @@
+-
+    name: 'Display below details'
+    hosts: localhost
+
+    vars: 
+      CAR: Hyundai
+      ModelC: 'i20-Asta'
+      Bike: Yamaha
+      ModelB: FZ
+    tasks:
+      -
+        command: 'echo "I Love my {{CAR}} and its {{ModelC}} car"'
+      -
+        command: 'echo "Also I Love My {{Bike}}-{{ModelB}} Bike too"'
+      -
+        command: 'echo "I love my both {{ModelC}} & {{ModelB}}"'

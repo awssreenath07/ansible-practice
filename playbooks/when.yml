@@ -1,0 +1,7 @@
+-
+    name: 'when condition'
+    hosts: TOMCAT
+    tasks:
+      -
+        command: 'systemctl start nginx'
+        when: ansible_os_family == "Amazon Linux"
