@@ -1,0 +1,13 @@
+-
+    name: 'Install httpd and start'
+    hosts: DB
+    become: yes
+    tasks:
+      -
+        yum: 
+          name: httpd
+          state: present
+      -
+        service: 
+          name: httpd
+          state: started
