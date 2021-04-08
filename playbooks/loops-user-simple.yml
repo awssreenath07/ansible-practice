@@ -1,0 +1,13 @@
+-
+    name: 'create simple user'
+    hosts: localhost
+    tasks:
+      -
+        user: name= '{{item}}' state= present
+        loop:
+          -
+            srinath
+          -
+            siva
+          -
+            murali

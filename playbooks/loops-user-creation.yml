@@ -1,0 +1,17 @@
+-
+    name: 'Multiple loops'
+    hosts: localhost
+    tasks:
+      -
+        user: name= '{{ item.name }}' state=present uid= '{{ item.uid }}'
+        loop:
+          -
+            name: srinath
+            uid: 777
+          -
+            name: siva
+            uid: 888
+          -
+            name: murali
+            uid: 999
+
