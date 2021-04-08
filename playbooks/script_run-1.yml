@@ -1,0 +1,6 @@
+-
+    name: 'run below script in TOMCAT node'
+    hosts: TOMCAT
+    tasks:
+      -
+        script: /srinath/ansible/playbooks/sample_script.sh

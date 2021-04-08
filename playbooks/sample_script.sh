@@ -1,1 +1,1 @@
-chmod 777 /TOMCAT/sri-3
+chmod 777 /TOMCAT/sri-4
